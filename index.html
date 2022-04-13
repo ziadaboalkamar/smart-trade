@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Smart Trade</title>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"
+    />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@600&amp;display=swap"
+      rel="stylesheet">
+    <link rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+
+  <!-- BEGIN: Vendor CSS-->
+  <link rel="stylesheet" type="text/css" href="app-assets/css-rtl/bootstrap-extended.css">
+
+  <link rel="stylesheet" type="text/css" href="app-assets/vendors/css/vendors-rtl.min.css">
+  <link rel="stylesheet" type="text/css" href="app-assets/vendors/css/charts/apexcharts.css">
+  <link rel="stylesheet" type="text/css" href="app-assets/css-rtl/plugins/charts/chart-apex.css">
+  <link rel="stylesheet" type="text/css" href="app-assets/css-rtl/custom-rtl.css">
+  <link rel="stylesheet" href="fonts/icomoon/style.css">
+  <link rel="stylesheet" href="css/hover.css">
+  <link rel="stylesheet" href="vendor/aos/aos.min.css">
+  <!-- Link Swiper's CSS -->
+ <link rel="stylesheet" href="css/swiper.css">
+
+
+
+  
+  <!-- END: Vendor CSS-->
+    <!-- Demo styles -->
+    <style>
+      html,
+      body {
+        position: relative;
+        height: 100%;
+      }
+
+      body {
+        font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+        font-size: 14px;
+        color: #000;
+        margin: 0;
+        padding: 0;
+      }
+
+      .swiper {
+        width: 100%;
+        height: 100%;
+      }
+
+      .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+      }
+
+      .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    </style>
+  </head>
+
+  <body>
+        <!--start nav bar  -->
+    <section class="nav " dir="rtl"> 
+
+        <div class="site-mobile-menu site-navbar-target">
+          <div class="site-mobile-menu-header">
+            <div class="site-mobile-menu-close mt-3">
+              <span class="icon-close2 js-menu-toggle"></span>
+            </div>
+          </div>
+          <div class="site-mobile-menu-body"></div>
+        </div> <!-- .site-mobile-menu -->
+  
+  
+        <div class="site-navbar-wrap">
+       
+  
+          <div class="site-navbar site-navbar-targe site_navbar_login js-sticky-header">
+            <div class="container">
+              <div class="row align-items-center">
+                <div class="col-3 text-left">
+                  <h1 class="mb-0 site-logo"><a href="index.html">
+                    <span class="title_of_logo gradient-text"> Smart Trade</span>
+
+                    <img
+                        src="images/logo.png" width="70px" alt="">
+                      </a></h1>
+                </div>
+           
+                <div class="col-8">
+                  <nav class="site-navigation text-left"role="navigation">
+                   
+                      <div class="d-inline-block d-lg-none ml-md-0 mr-auto py-3
+                        float-left"><a href="#" class="site-menu-toggle
+                          js-menu-toggle text-black"><span class="icon-menu h3"></span></a></div>
+                      <ul class="site-menu text-left t main-menu js-clone-nav d-none
+                        d-lg-block">
+                        <li class="active"><a href="#home-section"
+                            class="nav-link">من نحن</a></li>
+                        <li class="has-children">
+                          <a href="#" class="nav-link">  اخر الاخبار</a>
+                          <ul class="dropdown arrow-top">
+                            <li><a href="#" class="nav-link"> المركز الإعلامي</a></li>
+                            <li><a href="#" class="nav-link">المركز الإعلامي</a></li>
+                            <li><a href="#" class="nav-link">لتواصل</a></li>
+                       
+                          </ul>
+                        </li>
+                        <li><a href="#about-section" class="nav-link">العملات</a></li>
+                        <li><a href="#events-section" class="nav-link">   تواصل معنا</a></li>
+              
+                        <li><button class="btn btn-outline-more "><a
+                              href="#gallery-section" class="nav-link"></a>تسجيل دخول</button></li>
+                              <li class="has-children">
+                                <a href="#" class="nav-link">العربية</a>
+                                <ul class="dropdown arrow-top">
+                                  <li><a href="#" class="nav-link">العربية</a></li>
+                                  <li><a href="#" class="nav-link">الانجليزية</a></li>
+
+                             
+                                </ul>
+                              </li>
+  
+                      </ul>
+                
+                  </nav>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+  
+  
+        <div class="hero_index">
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide" style="
+                  background-image: linear-gradient(90deg, rgba(9, 211, 213, 0.46) 0%, rgba(3, 140, 212, 0.42) 100%), url(images/pexels-printexstar-11646613.jpg);">
+                    <div id="overlay"></div>
+                <div class="container content_container">
+                  <div class="row">
+                  
+                     <div class="col-lg-6">
+                      <div class="content text-right">
+                            <h1 data-aos="fade-left">
+                              قم ببيع و شراء العملات الرقمية خلال دقائق
+
+
+                            </h1>
+                            <p>انضم إلى أكبر بورصة عملات رقمية في العالم                            </p>
+                            <button class="button_of_hero" data-aos="fade-left"><a href="">أنشاء حساب الان</a></button>
+                    </div>
+                     </div>
+              
+
+                    </div>
+                  </div>
+                    
+                </div>
+             
+                <div class="swiper-slide" style="
+                background-image: linear-gradient(90deg, rgba(9, 211, 213, 0.46) 0%, rgba(3, 140, 212, 0.42) 100%), url(images/pexels-printexstar-11646613.jpg);">
+                  <div id="overlay"></div>
+              <div class="container content_container">
+                <div class="row">
+                
+                   <div class="col-lg-6">
+                    <div class="content text-right">
+                          <h1>
+                            قم ببيع و شراء العملات الرقمية خلال دقائق
+
+
+                          </h1>
+                          <p>انضم إلى أكبر بورصة عملات رقمية في العالم                            </p>
+                          <button class="button_of_hero" ><a href="">أنشاء حساب الان</a></button>
+                  </div>
+                   </div>
+            
+
+                  </div>
+                </div>
+                  
+              </div>       <div class="swiper-slide" style="
+              background-image: linear-gradient(90deg, rgba(9, 211, 213, 0.46) 0%, rgba(3, 140, 212, 0.42) 100%), url(images/pexels-printexstar-11646613.jpg);">
+                <div id="overlay"></div>
+            <div class="container content_container">
+              <div class="row">
+              
+                 <div class="col-lg-6">
+                  <div class="content text-right">
+                        <h1>
+                          قم ببيع و شراء العملات الرقمية خلال دقائق
+
+
+                        </h1>
+                        <p>انضم إلى أكبر بورصة عملات رقمية في العالم                            </p>
+                        <button class="button_of_hero"><a href="">أنشاء حساب الان</a></button>
+                </div>
+                 </div>
+          
+
+                </div>
+              </div>
+                
+            </div>
+                </div>
+              
+         
+                </div>
+                <div class="swiper-pagination"></div>
+              </div>
+        </div>
+        
+      </section>
+  
+      <!-- end nav bar -->
+<!-- section vedio tab -->
+<section class="vedio_tab mt-5 mb-5 " dir="rtl">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 text-right">
+        <h2>تعلم التداول وابق على اطلاع
+        </h2>
+      </div>
+      <div class="col-lg-12 text-right mt-3">
+        <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+          <li class="nav-item" role="presentation">
+            <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">إرسال العملات الرقمية</a>
+          </li>
+          <li class="nav-item" role="presentation">
+            <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">توثيق الحساب</a>
+          </li>
+        
+        </ul>
+        <div class="tab-content mt-5" id="pills-tabContent">
+          <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+            <div class="row ">
+              <div class="col-lg-6 mb-5">
+                <iframe width="100%" height="315" src="https://www.youtube.com/embed/bQixYiKBJYA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              </div>
+              <div class="col-lg-6">
+                <h3>كيف أرسل العملات الرقمية إلى عائلتي وأصدقائي في جميع أنحاء العالم؟
+                </h3>
+                <p class="mt-4 desc_of_vedio_tab">لا حاجة لأرقام حسابات أو أرقام تحويل أو رموز SWIFT، كل ما تحتاج إليه عنوان بريد إلكتروني أو رمز QR صالح، وحساب على منصة بايننس يمكنك من...</p>
+                <a class="btn btn-primary vedio_show_more_tab" href="#" role="button">تعلم المزيد</a>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+            <div class="row ">
+              <div class="col-lg-6 mb-5">
+                <iframe width="100%" height="315" src="https://www.youtube.com/embed/bQixYiKBJYA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              </div>
+              <div class="col-lg-6">
+                <h3>كيف أرسل العملات الرقمية إلى عائلتي وأصدقائي في جميع أنحاء العالم؟
+                </h3>
+                <p class="mt-4 desc_of_vedio_tab">لا حاجة لأرقام حسابات أو أرقام تحويل أو رموز SWIFT، كل ما تحتاج إليه عنوان بريد إلكتروني أو رمز QR صالح، وحساب على منصة بايننس يمكنك من...</p>
+                <a class="btn btn-primary vedio_show_more_tab" href="#" role="button">تعلم المزيد</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+      <!-- end section vedio tab-->
+      <!-- section vedio tab -->
+<section class="vedio_tab cryptocurrency_tab mt-5 mb-5 " dir="rtl">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 text-right">
+        <h2>تعلم التداول وابق على اطلاع
+        </h2>
+      </div>
+      <div class="col-lg-12 text-right mt-3">
+        <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+          <li class="nav-item" role="presentation">
+            <a class="nav-link active" id="pills-cryptocurrency_tab" data-toggle="pill" href="#pills-cryptocurrency" role="tab" aria-controls="pills-cryptocurrency" aria-selected="true">احصائيات الشهرية</a>
+          </li>
+          <li class="nav-item" role="presentation">
+            <a class="nav-link" id="pills_cryptocurrency_year_tab" data-toggle="pill" href="#pills_cryptocurrency_year" role="tab" aria-controls="pills_cryptocurrency_year" aria-selected="false">احصائيات السنوية</a>
+          </li>
+        
+        </ul>
+        <div class="tab-content mt-5" id="pills-tabContent">
+          <div class="tab-pane fade show active" id="pills-cryptocurrency" role="tabpanel" aria-labelledby="pills-cryptocurrency_tab">
+            <div class="row">
+              <div class="col-lg-4 col-sm-6 col-12">
+                  <div class="card">
+                      <div class="card-header align-items-start pb-0">
+                          <div>
+                              <h2 class="font-weight-bolder">78.9k</h2>
+                              <p class="card-text">Site Traffic</p>
+                          </div>
+                          <div class="avatar bg-light-primary p-50">
+                              <div class="avatar-content">
+                                  <img src="images/png-transparent-bitcoin-com-cryptocurrency-logo-zazzle-bitcoin-text-trademark-logo-removebg-preview.png" width="115px" height="64px"  alt="">
+                              </div>
+                          </div>
+                      </div>
+                      <div id="line-area-chart-5"></div>
+                  </div>
+              </div>
+              <div class="col-lg-4 col-sm-6 col-12">
+                  <div class="card">
+                      <div class="card-header align-items-start pb-0">
+                          <div>
+                              <h2 class="font-weight-bolder">659.8k</h2>
+                              <p class="card-text">Active Users</p>
+                          </div>
+                          <div class="avatar bg-light-success p-50">
+                              <div class="avatar-content">
+                                <img src="images/png-transparent-bitcoin-com-cryptocurrency-logo-zazzle-bitcoin-text-trademark-logo-removebg-preview.png" width="115px" height="64px"  alt="">
+                              </div>
+                          </div>
+                      </div>
+                      <div id="line-area-chart-6"></div>
+                  </div>
+              </div>
+              <div class="col-lg-4 col-sm-6 col-12">
+                  <div class="card">
+                      <div class="card-header align-items-start pb-0">
+                          <div>
+                              <h2 class="font-weight-bolder">28.7k</h2>
+                              <p class="card-text">Newsletter</p>
+                          </div>
+                          <div class="avatar bg-light-warning p-50">
+                              <div class="avatar-content">
+                                <img src="images/png-transparent-bitcoin-com-cryptocurrency-logo-zazzle-bitcoin-text-trademark-logo-removebg-preview.png" width="115px" height="64px"  alt="">
+                              </div>
+                          </div>
+                      </div>
+                      <div id="line-area-chart-7"></div>
+                  </div>
+              </div>
+              <div class="col-lg-12 text-center mt-5">
+                <a class="btn btn-primary vedio_show_more_tab share_more_cryptocurrency " href="#" role="button">المزيد</a>
+
+              </div>
+          </div>
+          </div>
+          <div class="tab-pane fade" id="pills_cryptocurrency_year" role="tabpanel" aria-labelledby="pills_cryptocurrency_year_tab">
+            <div class="row">
+              <div class="col-lg-4 col-sm-6 col-12">
+                  <div class="card">
+                      <div class="card-header align-items-start pb-0">
+                          <div>
+                              <h2 class="font-weight-bolder">78.9k</h2>
+                              <p class="card-text">Site Traffic</p>
+                          </div>
+                          <div class="avatar bg-light-primary p-50">
+                              <div class="avatar-content">
+                                  <img src="images/png-transparent-bitcoin-com-cryptocurrency-logo-zazzle-bitcoin-text-trademark-logo-removebg-preview.png" width="115px" height="64px"  alt="">
+                              </div>
+                          </div>
+                      </div>
+                      <div id="line-area-chart-5"></div>
+                  </div>
+              </div>
+              <div class="col-lg-4 col-sm-6 col-12">
+                  <div class="card">
+                      <div class="card-header align-items-start pb-0">
+                          <div>
+                              <h2 class="font-weight-bolder">659.8k</h2>
+                              <p class="card-text">Active Users</p>
+                          </div>
+                          <div class="avatar bg-light-success p-50">
+                              <div class="avatar-content">
+                                <img src="images/png-transparent-bitcoin-com-cryptocurrency-logo-zazzle-bitcoin-text-trademark-logo-removebg-preview.png" width="115px" height="64px"  alt="">
+                              </div>
+                          </div>
+                      </div>
+                      <div id="line-area-chart-6"></div>
+                  </div>
+              </div>
+              <div class="col-lg-4 col-sm-6 col-12">
+                  <div class="card">
+                      <div class="card-header align-items-start pb-0">
+                          <div>
+                              <h2 class="font-weight-bolder">28.7k</h2>
+                              <p class="card-text">Newsletter</p>
+                          </div>
+                          <div class="avatar bg-light-warning p-50">
+                              <div class="avatar-content">
+                                <img src="images/png-transparent-bitcoin-com-cryptocurrency-logo-zazzle-bitcoin-text-trademark-logo-removebg-preview.png" width="115px" height="64px"  alt="">
+                              </div>
+                          </div>
+                      </div>
+                      <div id="line-area-chart-7"></div>
+                  </div>
+              </div>
+              <div class="col-lg-12 text-center mt-5">
+                <a class="btn btn-primary vedio_show_more_tab share_more_cryptocurrency " href="#" role="button">المزيد</a>
+
+              </div>
+          </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+      <!-- end section vedio tab-->
+      <!-- section news  -->
+<section class="new_of_teath " dir="rtl">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 text-center news_main_title " data-aos="fade-up">
+        <div class="news_main_title text-center">  
+          <h3 class="main_title_of_news pb-3">دليلك لشراء العملات الرقمية</h3>
+          <p class="desc_of_news pb-3">تعلم شراء وبيع العملات الرقمية محليا بدون وسطاء ولا تكاليف
+          </p></div>
+  
+      </div>
+      <div class="col-lg-4 col-md-6 col-sm-6"  data-aos="fade-down">
+        <div class="blog__item hvr-grow">
+            <div class="blog__item__pic set-bg"  data-setbg="images/pexels-rodnae-productions-8370752.jpg">
+              </div>
+            <div class="blog__item__text text-right">
+                <h5 class="text-right main_title_of_news">عنوان المقال يكتب هنا نص
+                  تجريبي</h5>
+                  <p class="desc_of_news_blog">هذا النص هو مثال لنص يمكن أن يستبدل 
+                    في نفس المساحة، لقد تم توليد هذا 
+                    النص من مولد النص العربى</p>
+                    <button class="more_news">اقرا المزيد</button>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-4 col-md-6 col-sm-6"  data-aos="fade-down">
+      <div class="blog__item hvr-grow">
+          <div class="blog__item__pic set-bg"  data-setbg="images/pexels-rodnae-productions-8370752.jpg">
+            </div>
+          <div class="blog__item__text text-right">
+              <h5 class="text-right main_title_of_news">عنوان المقال يكتب هنا نص
+                تجريبي</h5>
+                <p class="desc_of_news_blog">هذا النص هو مثال لنص يمكن أن يستبدل 
+                  في نفس المساحة، لقد تم توليد هذا 
+                  النص من مولد النص العربى</p>
+                  <button class="more_news">اقرا المزيد</button>
+          </div>
+      </div>
+  </div>     <div class="col-lg-4 col-md-6 col-sm-6"  data-aos="fade-down">
+    <div class="blog__item hvr-grow">
+        <div class="blog__item__pic set-bg"  data-setbg="images/pexels-rodnae-productions-8370752.jpg">
+          </div>
+        <div class="blog__item__text text-right">
+            <h5 class="text-right main_title_of_news">عنوان المقال يكتب هنا نص
+              تجريبي</h5>
+              <p class="desc_of_news_blog">هذا النص هو مثال لنص يمكن أن يستبدل 
+                في نفس المساحة، لقد تم توليد هذا 
+                النص من مولد النص العربى</p>
+                <button class="more_news">اقرا المزيد</button>
+        </div>
+    </div>
+</div>
+
+
+<div class="col-md-12 text-center" data-aos="fade-up">
+  <button class="blog_more"><a href="">عرض المزيد</a></button>
+</div>
+    </div>
+  </div>
+</section>
+<!-- end section of news -->
+<!-- where you are -->
+<section class="where_you_are mt-5 pt-5"  dir="rtl">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 text-right">
+        <h2>تداول أينما كنت</h2>
+        <p>متوافق مع أجهزة متعددة، ابدأ التداول بأمان وراحة.
+        </p>
+        <p></p>
+      </div>
+      <div class="col-lg-6 mt-5">
+        <div class="img_of_where_you_are" style="background-image: url('images/mobile.jpg');">
+        </div>
+      </div>
+      <div class="col-lg-6  mt-5">
+        <div class="row">
+          <div class="col-auto">
+            <svg shape-rendering="crispEdges" height="86" width="86" viewBox="0 0 29 29"><path fill="#FFFFFF" d="M0,0 h29v29H0z"></path><path fill="#000000" d="M0 0h7v1H0zM8 0h2v1H8zM11 0h5v1H11zM18 0h1v1H18zM22,0 h7v1H22zM0 1h1v1H0zM6 1h1v1H6zM8 1h3v1H8zM12 1h4v1H12zM19 1h1v1H19zM22 1h1v1H22zM28,1 h1v1H28zM0 2h1v1H0zM2 2h3v1H2zM6 2h1v1H6zM8 2h4v1H8zM13 2h2v1H13zM20 2h1v1H20zM22 2h1v1H22zM24 2h3v1H24zM28,2 h1v1H28zM0 3h1v1H0zM2 3h3v1H2zM6 3h1v1H6zM9 3h2v1H9zM12 3h1v1H12zM14 3h7v1H14zM22 3h1v1H22zM24 3h3v1H24zM28,3 h1v1H28zM0 4h1v1H0zM2 4h3v1H2zM6 4h1v1H6zM8 4h1v1H8zM10 4h1v1H10zM13 4h1v1H13zM15 4h1v1H15zM18 4h2v1H18zM22 4h1v1H22zM24 4h3v1H24zM28,4 h1v1H28zM0 5h1v1H0zM6 5h1v1H6zM11 5h4v1H11zM16 5h1v1H16zM20 5h1v1H20zM22 5h1v1H22zM28,5 h1v1H28zM0 6h7v1H0zM8 6h1v1H8zM10 6h1v1H10zM12 6h1v1H12zM14 6h1v1H14zM16 6h1v1H16zM18 6h1v1H18zM20 6h1v1H20zM22,6 h7v1H22zM10 7h1v1H10zM12 7h1v1H12zM14 7h1v1H14zM16 7h1v1H16zM20 7h1v1H20zM0 8h1v1H0zM3 8h7v1H3zM13 8h5v1H13zM19 8h1v1H19zM21 8h1v1H21zM24 8h1v1H24zM26,8 h3v1H26zM2 9h4v1H2zM8 9h1v1H8zM10 9h1v1H10zM12 9h1v1H12zM14 9h2v1H14zM18 9h2v1H18zM23 9h2v1H23zM26 9h2v1H26zM2 10h6v1H2zM9 10h1v1H9zM12 10h1v1H12zM14 10h5v1H14zM20 10h2v1H20zM23 10h1v1H23zM26 10h1v1H26zM0 11h3v1H0zM8 11h3v1H8zM12 11h1v1H12zM14 11h1v1H14zM16 11h2v1H16zM19 11h2v1H19zM25 11h1v1H25zM28,11 h1v1H28zM2 12h2v1H2zM5 12h2v1H5zM9 12h1v1H9zM11 12h6v1H11zM20 12h1v1H20zM22 12h2v1H22zM28,12 h1v1H28zM3 13h1v1H3zM5 13h1v1H5zM7 13h1v1H7zM9 13h2v1H9zM12 13h1v1H12zM15 13h2v1H15zM20 13h1v1H20zM22 13h1v1H22zM24,13 h5v1H24zM0 14h5v1H0zM6 14h1v1H6zM8 14h4v1H8zM14 14h2v1H14zM17 14h5v1H17zM23 14h1v1H23zM26 14h1v1H26zM28,14 h1v1H28zM4 15h2v1H4zM7 15h1v1H7zM9 15h1v1H9zM12 15h4v1H12zM18 15h1v1H18zM21 15h4v1H21zM26 15h1v1H26zM28,15 h1v1H28zM0 16h1v1H0zM6 16h2v1H6zM18 16h1v1H18zM20 16h1v1H20zM25 16h1v1H25zM0 17h1v1H0zM2 17h4v1H2zM8 17h1v1H8zM12 17h1v1H12zM15 17h1v1H15zM18 17h3v1H18zM24 17h1v1H24zM26 17h2v1H26zM0 18h2v1H0zM3 18h2v1H3zM6 18h1v1H6zM8 18h2v1H8zM12 18h5v1H12zM19 18h1v1H19zM25 18h1v1H25zM28,18 h1v1H28zM0 19h2v1H0zM4 19h2v1H4zM8 19h1v1H8zM12 19h2v1H12zM16 19h1v1H16zM20 19h1v1H20zM22 19h5v1H22zM0 20h9v1H0zM10 20h2v1H10zM13 20h1v1H13zM16 20h2v1H16zM19 20h9v1H19zM8 21h2v1H8zM12 21h2v1H12zM15 21h1v1H15zM18 21h1v1H18zM20 21h1v1H20zM24 21h2v1H24zM0 22h7v1H0zM8 22h6v1H8zM15 22h1v1H15zM17 22h1v1H17zM19 22h2v1H19zM22 22h1v1H22zM24 22h2v1H24zM0 23h1v1H0zM6 23h1v1H6zM8 23h6v1H8zM15 23h1v1H15zM17 23h4v1H17zM24 23h1v1H24zM27 23h1v1H27zM0 24h1v1H0zM2 24h3v1H2zM6 24h1v1H6zM8 24h6v1H8zM16 24h1v1H16zM19 24h7v1H19zM27,24 h2v1H27zM0 25h1v1H0zM2 25h3v1H2zM6 25h1v1H6zM8 25h1v1H8zM10 25h3v1H10zM14 25h6v1H14zM21 25h1v1H21zM23 25h1v1H23zM28,25 h1v1H28zM0 26h1v1H0zM2 26h3v1H2zM6 26h1v1H6zM9 26h1v1H9zM13 26h1v1H13zM15 26h1v1H15zM17 26h1v1H17zM20 26h2v1H20zM23 26h2v1H23zM26,26 h3v1H26zM0 27h1v1H0zM6 27h1v1H6zM11 27h1v1H11zM15 27h1v1H15zM22 27h2v1H22zM25 27h2v1H25zM28,27 h1v1H28zM0 28h7v1H0zM8 28h1v1H8zM10 28h1v1H10zM13 28h4v1H13zM19 28h2v1H19zM24 28h2v1H24z"></path></svg>
+          </div>
+          <div class="col text-right">
+            <h4>
+              قم بالمسح للتنزيل</h4>
+              <h4>iOS & Android</h4>
+          </div>
+          <div class="col-lg-12 mt-5 text-center">
+            <ul class="list_of_dawnload_store pr-0">
+              <li><a href=""><i class="fa-brands fa-google-play"></i> <h4>Google Play</h4></a></li>
+              <li><a href=""><i class="fa-brands fa-apple"></i><h4>App Store</h4></a> </li>
+              <li><a href=""><i class="fa-brands fa-android"></i><h4>Android Apk</h4></a> </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- end where you are -->
+<!-- start tdawal know -->
+<section class="tadawal_know vedio_tab mt-5 pt-5  pb-5 " dir="rtl">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 text-center">
+        <h2 class="mb-5">ابدأ التداول الآن</h2>
+        <a class="btn btn-primary vedio_show_more_tab share_more_cryptocurrency" href="#" role="button">انشاء حساب</a> 
+        <a class="btn btn-primary vedio_show_more_tab_outline " href="#" role="button">تداول الان</a>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- end start tdawal know -->
+       <!-- FOOTER START -->
+       <footer class="footer" dir="rtl">
+        <div class="container">
+          <div class="row pt-5 pb-2">
+            <div class="col-md-4 footer-logo">
+              <img src="images/logo1.png" width="80%" 
+                alt="">
+            </div>
+            <div class="col-md-4">
+              <h4 class="text-right title_of_category_footer">القائمة الرئيسية</h4>
+              <div class="row">
+                <div class="col-md-6">
+                  <ul class="text-right list_of_footer">
+                    <li class=""><i class="fa-solid fa-angle-left"></i> <a href="">الرئيسية</a>
+                    </li>
+                    <li><i class="fa-solid fa-angle-left"></i> <a href="">عن
+                        نحن</a></li>
+                    <li><i class="fa-solid fa-angle-left"></i> <a href="">اخبار
+                        التداول</a></li>
+                  
+                  </ul>
+                </div>
+                <div class="col-md-6">
+                  <ul class="text-right list_of_footer">
+                    <li> <i class="fa-solid fa-angle-left"></i><a href="">تواصل معنا</a>
+                    </li>
+                    <li> <i class="fa-solid fa-angle-left"></i><a href="">عرض العملات</a></li>
+                    <li><i class="fa-solid fa-angle-left"></i> <a href="">الاسئلة الشائعة</a></li>
+                    <li><i class="fa-solid fa-angle-left"></i> <a href="">سياسة الخصوصية</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <h4 class="text-right title_of_category_footer">بيانات التواصل</h4>
+                <div>
+                  <ul class="text-right">
+                    <li><img src="images/icons8-android-64.png" alt=""> +966507858581</li>
+                    <li><img src="images/icons8-email-64-(1).png" alt="">jammeeatalhabeel@gmail.com</li>
+                    <li><img src="images/icons8-map-64.png" alt="">المملكة العربية السعودية - محافظة رجال آلمع 
+                      مركز الحبيل</li>
+           
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <!-- END OF FOOTER -->
+      <!-- start copy right -->
+      <section class="copy_right">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12 text-center">
+              <h6> &copy; 2022 Smart Trade جميع الحقوق محفوظة </h6>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- end copy right -->
+    <!-- Swiper -->
+  
+    <!-- Swiper JS -->
+
+        <!-- BEGIN: Vendor JS-->
+        <script src="app-assets/vendors/js/vendors.min.js"></script>
+        <!-- BEGIN Vendor JS-->
+    
+        <!-- BEGIN: Page Vendor JS-->
+        <script src="app-assets/vendors/js/charts/apexcharts.js"></script>
+        <!-- END: Page Vendor JS-->
+    
+        <!-- BEGIN: Theme JS-->
+        <script src="app-assets/js/core/app-menu.js"></script>
+        <script src="app-assets/js/core/app.js"></script>
+        <!-- END: Theme JS-->
+    
+        <!-- BEGIN: Page JS-->
+        <script src="app-assets/js/scripts/cards/card-statistics.js"></script>
+        <script src="js/swiper.js"></script>
+        <script src="js/jquery-3.3.1.min.js"></script>
+        <script src="js/popper.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/jquery.sticky.js"></script>
+        <script src="vendor/aos/aos.min.js"></script>
+        <script src="js/main.js"></script>
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        direction: "vertical",
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+      });
+    </script>
+
+  
+  </body>
+</html>
