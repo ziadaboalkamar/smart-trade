@@ -102,3 +102,10 @@ $('.set-bg').each(function () {
 	var bg = $(this).data('setbg');
 	$(this).css('background-image', 'url(' + bg + ')');
 });
+
+var $backgroundImage = $('.bg-image, .bg-image-top');
+$backgroundImage.each(function() {
+	var $this = $(this),
+		$bgImage = $this.data('bg');
+	$this.css('background-image', 'url('+$bgImage+')');
+});

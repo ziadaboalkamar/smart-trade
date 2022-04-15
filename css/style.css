@@ -96,6 +96,7 @@ a {
   background-repeat: no-repeat;
   overflow: hidden;
   background-position: center;
+  margin-bottom: 50px;
  }
  .hero_index.hero_index_for_sub_pages{
   height: 30vh;
@@ -218,7 +219,8 @@ a {
       font-weight: 500; }
     .site-navbar .site-navigation .site-menu > li {
       display: inline-block;
-      padding: 10px 5px; }
+      padding: 10px 5px;
+    margin-top: 0px; }
       .site-navbar .site-navigation .site-menu > li > a {
         padding: 20px 6px;
         color: #0B3F66;
@@ -563,6 +565,16 @@ background: linear-gradient(90deg, rgba(9,211,213,1) 0%, rgba(3,140,212,1) 100%)
   background-size: cover;
   width: 100%;
 
+}
+.hero_index .content_of_sub_page{
+  margin-top: 50px;
+}
+.hero_index.bg_of_sub_page{
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+height: 75vh;
+padding-top: 30px;
 }
 .hero_index #overlay{
   position: fixed;
@@ -1029,3 +1041,5 @@ padding-left: 19px;}
   }
 }
 /* end media */
+
+
