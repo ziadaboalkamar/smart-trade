@@ -968,6 +968,9 @@ padding-left: 19px;}
   color: white;
 }
 
+.footer ul.social_contact li i{
+  font-size: 20px;
+}
 .footer ul li img{
   color: white;
   padding-left: 6px;
@@ -1420,3 +1423,41 @@ textarea.input100 {
   }
 }
 
+
+/* start policy */
+.policy .image_of_policy{
+  max-height: 450px;
+  overflow: hidden;
+}
+.policy p{
+  line-height: 2.2;
+  color: #000000ab;
+}
+.policy h2{
+  font-family: 'Montserrat', sans-serif !important;
+
+}
+.policy h2::after{
+
+  content: '';
+  height: 3px;
+  background: #47763F;
+  width: 63px;
+  display: block;
+  text-align: 3;
+
+  margin: 0 auto;
+  padding-top: 10;
+  margin-top: 10px;
+}
+
+/* end policy */
+
+/* img_of_almanasa */
+.img_of_almanasa{
+  max-height: 600px;
+  overflow: hidden;
+  border-radius: 10px;
+
+}
+/* rnd img_of_almanasa */
